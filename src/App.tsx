@@ -8,6 +8,7 @@ import Location from "./components/Location";
 import OutSideAirCard from "./components/OutSideAirCard";
 import WeatherCard from "./components/WeatherCard";
 import OutsideTemperature from "./components/OutsideTemperature";
+import InsideAllAir from "./components/InsideAllAir";
 
 type WeatherItem = {
   baseDate: string;
@@ -107,8 +108,8 @@ function App() {
         <OutsideTemperature
           domain={[-45, 45]}
           topLabel="45°C"
-          showMidLabel={true} // 중앙 0°C 숨김
-          midLabel="0°C" // 표시할 경우 중앙 텍스트
+          showMidLabel={true}
+          midLabel="0°C"
           bottomLabel="-45°C"
           dataLabel="온도 28°C"
           barcolor="#FF650C"
@@ -116,12 +117,13 @@ function App() {
         <OutsideTemperature
           domain={[0, 100]}
           topLabel="100%"
-          showMidLabel={false} // 중앙 0°C 숨김
+          showMidLabel={false}
           bottomLabel="0%"
           dataLabel="습도 30%"
           barcolor="#37A2FF"
         />
-        <WeatherCard />
+        {/* <WeatherCard /> */}
+        <InsideAllAir />
       </div>
     </>
   );
