@@ -9,6 +9,9 @@ import OutSideAirCard from "./components/OutSideAirCard";
 import WeatherCard from "./components/WeatherCard";
 import OutsideTemperature from "./components/OutsideTemperature";
 import InsideAllAir from "./components/InsideAllAir";
+import InsideAllAirTemperature from "./components/InsideAllAirTemperature";
+import temperatureIcon from "./assets/temperature_icon.png";
+import Humidity from "./assets/humidity_icon.png";
 
 type WeatherItem = {
   baseDate: string;
@@ -124,6 +127,18 @@ function App() {
         />
         {/* <WeatherCard /> */}
         <InsideAllAir />
+        <InsideAllAirTemperature
+          icon={temperatureIcon}
+          lable="온도"
+          value="28"
+          unit="°C"
+        />
+        <InsideAllAirTemperature
+          icon={Humidity}
+          lable="습도"
+          value="50"
+          unit="%"
+        />
       </div>
     </>
   );
