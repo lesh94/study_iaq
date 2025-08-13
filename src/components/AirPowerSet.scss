@@ -1,0 +1,54 @@
+.airpowerset_wrap {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #fff, #f9fafb);
+  border-radius: 16px;
+  border: solid 1px white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  > .airpowerset_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    > .airpowerset_left_top {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      > .airpowerset_power_button {
+        display: flex;
+        gap: 8px;
+        > button {
+          all: unset;
+          padding: 4px 12px;
+          background-color: #f6f6f6;
+          border-radius: 16px;
+          border: solid 1px #d9d9d9;
+          color: #989898;
+        }
+      }
+      > .airpowerset_automatic_button {
+        width: 100%;
+        > button {
+          all: unset;
+          width: 100%;
+          padding: 4px 0px;
+          text-align: center;
+          background-color: #f6f6f6;
+          border-radius: 16px;
+          border: solid 1px #d9d9d9;
+          color: #989898;
+        }
+      }
+    }
+    > .airpowerset_left_bottom {
+      > p {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+  > .airpowerset_right {
+  }
+}
