@@ -13,6 +13,7 @@ import InsideAllAirTemperature from "./components/InsideAllAirTemperature";
 import temperatureIcon from "./assets/temperature_icon.png";
 import Humidity from "./assets/humidity_icon.png";
 import AirPowerSet from "./components/AirPowerSet";
+import InSideAirHalf from "./components/InSideAirHalf";
 
 type WeatherItem = {
   baseDate: string;
@@ -141,6 +142,7 @@ function App() {
           unit="%"
         />
         <AirPowerSet />
+        <InSideAirHalf />
       </div>
     </>
   );
