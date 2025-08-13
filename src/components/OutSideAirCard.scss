@@ -1,0 +1,76 @@
+.outsideaircard_wrap {
+  width: 100%;
+  background: linear-gradient(to right, #fff, #f9fafb);
+  border-radius: 16px;
+  border: solid 1px white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  > .outsideaircard_left_wrap {
+    > .outsideaircard_top_wrap {
+      > .outsideair_text_info_wrap {
+        list-style: none;
+        display: flex;
+        gap: 12px;
+        color: #bfbfbf;
+        font-size: 12px;
+        > .outsideair_info_text {
+          background-color: #f2f2f2;
+          padding: 4px 8px;
+          border-radius: 16px;
+        }
+        > .outsideair_info_name {
+          background-color: #f2f2f2;
+          padding: 4px 8px;
+          border-radius: 16px;
+        }
+        > .outsideair_info_unit {
+          background-color: #f2f2f2;
+          padding: 4px 8px;
+          border-radius: 16px;
+        }
+      }
+    }
+    > .outsideaircard_bottom_wrap {
+      > .outsideair_name_wrap {
+        > .outsideair_name {
+          font-weight: 500;
+          margin-top: 26px;
+        }
+      }
+      > .outsideair_data_wrap {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        > .outsideair_data {
+          font-size: 24px;
+          font-weight: 500;
+        }
+        > .outsideair_data_unit {
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  > .outsideaircard_right_wrap {
+    display: flex;
+    align-items: end;
+    > .outsideair_data_text_wrap {
+      > .outsideair_data_box {
+        width: 82px;
+        height: 73px;
+        background-color: #faeaec;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > .outsideair_data_text {
+          font-weight: 500;
+          color: #ff0000;
+        }
+      }
+    }
+  }
+}

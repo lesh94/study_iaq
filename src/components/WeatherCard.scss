@@ -1,0 +1,57 @@
+.weatherCard_wrap {
+  position: relative;
+  > .weatherCard_img_wrap {
+    position: absolute;
+    > img {
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+  > .weatherCard_icon_text_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 416px;
+    height: 154px;
+    top: 0;
+    left: 0;
+    padding: 16px 36px 16px 24px;
+    border: solid 1px white;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.08); /* 반투명 필수 */
+    backdrop-filter: blur(10px); /* 블러 정도 */
+    -webkit-backdrop-filter: blur(10px);
+    > .weatherCard_left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      > .weather_icon {
+        width: 132px;
+        height: 93px;
+        > img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      > .weather_info_text_wrap {
+        > .weather_info_text {
+          color: white;
+          font-weight: 400;
+        }
+      }
+    }
+    > .weatherCard_right {
+      > .time_wrap {
+        > p {
+          font-size: 42px;
+          color: white;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
