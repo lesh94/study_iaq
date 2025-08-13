@@ -1,0 +1,60 @@
+.insideairhalf_wrap {
+  width: 100%;
+  background: white;
+  border-radius: 16px;
+  border: solid 1px #f2f2f2;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  > .insideairhalf_top {
+    display: flex;
+    justify-content: space-between;
+    > .insideairhalf_top_left {
+      > .insideairhalf_name {
+        font-weight: 500;
+      }
+      > .insideairhalf_unit_wrap {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        > .insideairhalf_number {
+          font-size: 24px;
+        }
+        > .insideairhalf_unit {
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+    }
+    > .insideairhalf_top_right {
+      > .insideairhalf_text_box {
+        width: 82px;
+        height: 73px;
+        background-color: #d8ebff;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > .insideairhalf_text {
+          font-weight: 500;
+          color: #36a0fc;
+        }
+      }
+    }
+  }
+  > .insideairhalf_bottom {
+    width: 100%;
+    height: 2px;
+    > .insideairhalf_graph_backgournd {
+      width: 100%;
+      height: 2px;
+      background-color: #d9d9d9;
+      > .insideairhalf_graph {
+        width: 50%;
+        height: 2px;
+        background-color: #36a0fc;
+      }
+    }
+  }
+}
