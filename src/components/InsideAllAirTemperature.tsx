@@ -7,6 +7,7 @@ type TemperatureIcon = {
   lable: string;
   value: string;
   unit: string;
+  height?: string;
 };
 
 const InsideAllAirTemperature = ({
@@ -14,10 +15,11 @@ const InsideAllAirTemperature = ({
   lable,
   value,
   unit,
+  height = "241px",
 }: TemperatureIcon) => {
   return (
     <>
-      <div className="insideAllAirTemperature_wrap">
+      <div className="insideAllAirTemperature_wrap" style={{ height }}>
         <div className="insideAllAirTemperature_top_wrap">
           <div className="temperature_icon">
             <img src={icon} alt="temperature_icon"></img>

@@ -1,0 +1,24 @@
+.app_wrap {
+  > .app_contents_wrap {
+    display: flex;
+    gap: 24px;
+    width: 1763px;
+    > .app_section_left {
+    }
+    > .line {
+      background-color: #d9d9d9;
+      width: 1px;
+    }
+    > .app_section_right {
+      width: 50%;
+      display: flex;
+      gap: 16px;
+      > .app_section_right_left {
+        width: 50%;
+      }
+      > .app_section_right_right {
+        width: 50%;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import "./App.scss";
 import axios from "axios";
 import Header from "./components/Header";
 import TitleText from "./components/TitleText";
@@ -14,6 +14,11 @@ import temperatureIcon from "./assets/temperature_icon.png";
 import Humidity from "./assets/humidity_icon.png";
 import AirPowerSet from "./components/AirPowerSet";
 import InSideAirHalf from "./components/InSideAirHalf";
+import WeatherSection from "./sections/WeatherSection";
+import OutdoorAirDetailSection from "./sections/OutdoorAirDetailSection";
+import OutdoorAirSection from "./sections/OutdoorAirSection";
+import IndoorAirSection from "./sections/IndoorAirSection";
+import RommAirSection from "./sections/RommAirSection";
 
 type WeatherItem = {
   baseDate: string;
@@ -105,44 +110,20 @@ function App() {
     <>
       <div className="app_wrap">
         <Header />
-        <TitleText text="화곡어린이집" fontSize="24px" fontWeight={500} />
-        <TitleText text="오늘의 날씨" fontSize="16px" fontWeight={400} />
-        <TitleText text="실외 공기질" fontSize="16px" fontWeight={400} />
-        <Location />
-        <OutSideAirCard />
-        <OutsideTemperature
-          domain={[-45, 45]}
-          topLabel="45°C"
-          showMidLabel={true}
-          midLabel="0°C"
-          bottomLabel="-45°C"
-          dataLabel="온도 28°C"
-          barcolor="#FF650C"
-        />
-        <OutsideTemperature
-          domain={[0, 100]}
-          topLabel="100%"
-          showMidLabel={false}
-          bottomLabel="0%"
-          dataLabel="습도 30%"
-          barcolor="#37A2FF"
-        />
-        {/* <WeatherCard /> */}
-        <InsideAllAir />
-        <InsideAllAirTemperature
-          icon={temperatureIcon}
-          lable="온도"
-          value="28"
-          unit="°C"
-        />
-        <InsideAllAirTemperature
-          icon={Humidity}
-          lable="습도"
-          value="50"
-          unit="%"
-        />
-        <AirPowerSet />
-        <InSideAirHalf />
+        <div className="app_contents_wrap">
+          <div className="app_section_left">
+            <OutdoorAirSection />
+          </div>
+          <div className="line"></div>
+          <div className="app_section_right">
+            <div className="app_section_right_left">
+              <IndoorAirSection />
+            </div>
+            <div className="app_section_right_right">
+              <RommAirSection />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
