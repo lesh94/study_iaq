@@ -1,0 +1,22 @@
+.WeatherSection_wrap {
+  max-width: 848px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  > .WeatherSection_top {
+  }
+  > .WeatherSection_bottom {
+    display: flex;
+    gap: 16px;
+
+    > .WeatherSection_bottom_left {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    > .WeatherSection_bottom_right {
+      display: flex;
+      gap: 16px;
+    }
+  }
+}

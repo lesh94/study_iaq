@@ -1,0 +1,27 @@
+.indoorAirSection_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  > .indoorAirSection_top {
+  }
+  > .indoorAirSection_mid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    background: linear-gradient(to right, #fff, #f9fafb);
+    border-radius: 16px;
+    border: solid 1px white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    > .indoorAirSection_mid_top {
+      display: flex;
+      gap: 16px;
+    }
+    > .indoorAirSection_mid_bottom {
+      display: flex;
+      gap: 16px;
+    }
+  }
+  > .indoorAirSection_bottom {
+  }
+}

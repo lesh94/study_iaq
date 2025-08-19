@@ -1,0 +1,24 @@
+.OutdoorAirDetailSection_wrap {
+  max-width: 848px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  > .OutdoorAirDetailSection_top {
+  }
+  > .OutdoorAirDetailSection_bottom {
+    display: flex;
+    gap: 16px;
+    > .OutdoorAirDetailSection_bottom_left {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+    }
+    > .OutdoorAirDetailSection_bottom_right {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+    }
+  }
+}

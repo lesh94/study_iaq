@@ -6,7 +6,8 @@
   padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 104px;
+  justify-content: space-between;
+
   > .insideAllAirTemperature_top_wrap {
     > .temperature_icon {
       width: 27px;
